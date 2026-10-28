@@ -1,0 +1,25 @@
+# Snyk (https://snyk.io) policy file
+version: v1.25.0
+ignore:
+  SNYK-JS-MARSDB-480405:
+    - '*':
+        reason: 'Embedded database internal untuk testing mockup, tidak tersedia patch upstream; isolasi lingkungan diterapkan.'
+        expires: 2026-12-31T23:59:59.999Z
+  SNYK-JS-DECOMPRESS-20254116:
+    - '*':
+        reason: 'Transitive dependency dari download library, maintainer belum merilis patch upstream.'
+        expires: 2026-12-31T23:59:59.999Z
+  SNYK-JS-NOTEVIL-2385946:
+    - '*':
+        reason: 'Komponen sengaja dipertahankan untuk modul keamanan pelatihan aplikasi OWASP Juice Shop.'
+        expires: 2026-12-31T23:59:59.999Z
+  SNYK-JS-HTTPCACHESEMANTICS-19964064:
+    - '*':
+        reason: 'Transitive build-time tool dependency (dev-only), tidak terekspos di production bundle.'
+        expires: 2026-12-31T23:59:59.999Z
+  SNYK-JS-HTTPCACHESEMANTICS-19964068:
+    - '*':
+        reason: 'Transitive build-time tool dependency (dev-only), tidak terekspos di production bundle.'
+        expires: 2026-12-31T23:59:59.999Z
+patch: {}
+
